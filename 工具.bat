@@ -1,7 +1,40 @@
+::[Bat To Exe Converter]
+::
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCuDJHe34UY/F0MaHkrSAEWJE7ET17C1vdWmrkEid+0yaIDV37qaM9w92VDgetYe2W9Im85MLxRcey6YYRomqmt+mGWRPtGZjyHSX0yGykolFWZ8gnHsvi4ob8Z6mcYQ7w6N6Unws6QF33v3W7tAHGDuoQ==
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSDk=
+::cBs/ulQjdF+5
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpCI=
+::egkzugNsPRvcWATEpCI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+IeA==
+::cxY6rQJ7JhzQF1fEqQJhZk8aHErSXA==
+::ZQ05rAF9IBncCkqN+0xwdVsFAlDMbCXqZg==
+::ZQ05rAF9IAHYFVzEqQJQ
+::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
+::cRolqwZ3JBvQF1fEqQJQ
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATElA==
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::Zh4grVQjdCaDJN5XL8Xr156DiYFn6+xp3TD0H9R8PDEAebKYgye6nVjNi/rabrBd713hFQ==
+::YB416Ek+ZW8=
+::
+::
+::978f952a14a936cc963da21a135fa983
 @echo off
 color 0a
-title 系统工具v1.3.2
-echo 系统工具v1.3.2!拥有以下功能:
+title 系统工具v1.4.0
+echo 系统工具v1.4.0!拥有以下功能:
 echo 1、清空当前用户密码
 echo 2、清空指定用户密码
 echo 3、修改当前用户密码
@@ -9,20 +42,12 @@ echo 4、修改指定用户密码
 echo 5、一键刷新（结束当前用户所有进程，电脑卡时使用）
 echo 6、快捷蓝屏（对系统没有伤害）
 echo 7、弹出指定驱动器（如C盘）
-echo 8、删除系统(1.1)
-echo 9、禁用程序(1.2)(1.3.1,1.3.2增加功能）
-echo 10、解除禁用程序(1.3)
+echo 8、删除系统
+echo 9、禁用程序
+echo 10、解除禁用程序
+echo 新增：11、激活系统（部分Windows版本可能不可用）
 set /p number=请输入想要使用的功能（输入序号）：
-if "%number%"=="1" goto 1
-if "%number%"=="2" goto 2
-if "%number%"=="3" goto 3
-if "%number%"=="4" goto 4
-if "%number%"=="5" goto 5
-if "%number%"=="6" goto 6
-if "%number%"=="7" goto 7
-if "%number%"=="8" goto 8
-if "%number%"=="9" goto 9
-if "%number%"=="10" goto 10
+goto %number%
 :1
 net user %username% ""
 goto end
@@ -71,6 +96,11 @@ goto end
 :10
 set /p prog=请输入要解除禁用的程序名(如微信就输入WeChat.exe)：
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%prog%" /f
+goto end
+
+:11
+slmgr/skms kms.03k.org
+slmgr/ato
 goto end
 
 :end

